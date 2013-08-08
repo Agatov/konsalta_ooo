@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  include ApplicationHelper
   def create
     @order = Order.new params[:order]
     if @order.save
